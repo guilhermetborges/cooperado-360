@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooperado 360 - Configurações</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> html { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; } </style>
+</head>
+<body class="bg-gray-50">
+  <div class="flex min-h-screen">
+    <aside class="fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200">
+      <div class="px-4 py-4 flex items-center gap-2"><div class="h-9 w-9 rounded-lg bg-[#004B3C] flex items-center justify-center text-white font-bold">S</div><div class="font-semibold text-[#004B3C]">Cooperado 360</div></div>
+      <nav class="mt-2 px-2 space-y-1">
+        <a href="home.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l9-9 9 9M4.5 10.5V21h15V10.5"/></svg><span>Home</span></a>
+        <a href="carteira.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-3-3v6"/></svg><span>Carteira</span></a>
+        <a href="cooperado.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m8-4a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span>Cooperado 360</span></a>
+        <a href="qualidade.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>Qualidade</span></a>
+        <a href="configuracoes.html" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-gray-100 text-[#004B3C] hover:bg-gray-200"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35.63-.153 1.152-.575 1.305-1.206.426-1.756 2.924-1.756 3.35 0 .153.63.575 1.152 1.206 1.305z"/></svg><span>Configurações</span></a>
+      </nav>
+    </aside>
+
+    <div class="flex-1 ml-64">
+      <header class="bg-[#004B3C] text-white px-6 py-4 flex items-center justify-between sticky top-0 z-10">
+        <span class="text-lg font-semibold">Configurações (Admin)</span>
+        <div class="flex items-center gap-3"><span class="text-sm font-medium">João | Gerente</span><div class="h-8 w-8 rounded-full bg-white/20 flex items-center justify-center">J</div></div>
+      </header>
+
+      <main class="p-6 space-y-6">
+        <!-- Accordion: Parâmetros -->
+        <section class="bg-white rounded-xl shadow-md">
+          <button class="w-full text-left px-4 py-3 border-b font-semibold text-[#004B3C]">Parâmetros</button>
+          <div class="p-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div><label class="text-sm text-gray-600">Peso Risco</label><input type="range" class="w-full" /></div>
+            <div><label class="text-sm text-gray-600">Peso CLTV</label><input type="range" class="w-full" /></div>
+            <div><label class="text-sm text-gray-600">Limiar Alerta</label><input class="w-full border-gray-300 rounded-lg" placeholder="0.75" /></div>
+            <div><label class="text-sm text-gray-600">Dias Frescor</label><input class="w-full border-gray-300 rounded-lg" placeholder="30" /></div>
+          </div>
+        </section>
+
+        <!-- Accordion: Regras de Alerta -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="w-full text-left px-4 py-3 border-b font-semibold text-[#004B3C]">Regras de Alerta</button>
+          <div class="p-4">
+            <div class="overflow-auto">
+              <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50"><tr><th class="px-3 py-2 text-left text-xs font-semibold text-gray-600">Regra</th><th class="px-3 py-2 text-left text-xs font-semibold text-gray-600">Condição</th><th class="px-3 py-2 text-left text-xs font-semibold text-gray-600">Severidade</th><th class="px-3 py-2"></th></tr></thead>
+                <tbody class="divide-y divide-gray-100">
+                  <tr class="hover:bg-gray-50"><td class="px-3 py-2">Seguro a vencer</td><td class="px-3 py-2">dias <= 30</td><td class="px-3 py-2"><span class="text-xs bg-yellow-500 text-white rounded-lg px-2 py-0.5">Média</span></td><td class="px-3 py-2 space-x-2"><button class="bg-[#007F3D] hover:bg-[#005C2D] text-white rounded-lg px-3 py-1">Editar</button><button class="bg-red-600 hover:bg-red-700 text-white rounded-lg px-3 py-1">Excluir</button></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Accordion: Usuários e Perfis -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="flex items-center justify-between px-4 py-3 border-b"><span class="font-semibold text-[#004B3C]">Usuários e Perfis</span><button class="bg-[#007F3D] hover:bg-[#005C2D] text-white rounded-lg px-3 py-1">Adicionar usuário</button></div>
+          <div class="p-4 overflow-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50"><tr><th class="px-3 py-2 text-left text-xs font-semibold text-gray-600">Nome</th><th class="px-3 py-2 text-left text-xs font-semibold text-gray-600">Perfil</th><th class="px-3 py-2 text-left text-xs font-semibold text-gray-600">Agência</th><th class="px-3 py-2"></th></tr></thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr class="hover:bg-gray-50"><td class="px-3 py-2">João</td><td class="px-3 py-2">Gerente</td><td class="px-3 py-2">001</td><td class="px-3 py-2"><button class="bg-[#007F3D] hover:bg-[#005C2D] text-white rounded-lg px-3 py-1">Editar</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Botão Recalcular -->
+        <section class="bg-white rounded-xl shadow-md p-4 flex items-center justify-between">
+          <div class="text-sm text-gray-600">Aplicar mudanças de configuração em todos os cálculos</div>
+          <button class="flex items-center gap-2 bg-[#007F3D] hover:bg-[#005C2D] text-white rounded-lg px-4 py-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v6h6M20 20v-6h-6"/><path stroke-linecap="round" stroke-linejoin="round" d="M20 10a8 8 0 10-3.88 6.76"/></svg>
+            <span>Recalcular tudo</span>
+          </button>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

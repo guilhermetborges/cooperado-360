@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooperado 360 - Carteira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> html { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; } </style>
+</head>
+<body class="bg-gray-50">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200">
+      <div class="px-4 py-4 flex items-center gap-2">
+        <div class="h-9 w-9 rounded-lg bg-[#004B3C] flex items-center justify-center text-white font-bold">S</div>
+        <div class="font-semibold text-[#004B3C]">Cooperado 360</div>
+      </div>
+      <nav class="mt-2 px-2 space-y-1">
+        <a href="home.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l9-9 9 9M4.5 10.5V21h15V10.5"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="carteira.html" class="flex items-center gap-3 px-3 py-2 rounded-lg bg-gray-100 text-[#004B3C] hover:bg-gray-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-3-3v6"/></svg>
+          <span>Carteira</span>
+        </a>
+        <a href="cooperado.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1m8-4a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Cooperado 360</span>
+        </a>
+        <a href="qualidade.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <span>Qualidade</span>
+        </a>
+        <a href="configuracoes.html" class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35.63-.153 1.152-.575 1.305-1.206.426-1.756 2.924-1.756 3.35 0 .153.63.575 1.152 1.206 1.305z"/></svg>
+          <span>Configurações</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Content -->
+    <div class="flex-1 ml-64">
+      <!-- Topbar -->
+      <header class="bg-[#004B3C] text-white px-6 py-4 flex items-center justify-between sticky top-0 z-10">
+        <div class="flex items-center gap-3">
+          <span class="text-lg font-semibold">Carteira</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-sm font-medium">João | Gerente</span>
+          <div class="h-8 w-8 rounded-full bg-white/20 flex items-center justify-center">J</div>
+        </div>
+      </header>
+
+      <main class="p-6 space-y-6">
+        <!-- Barra de busca e ações -->
+        <section class="bg-white rounded-xl shadow-md p-4">
+          <div class="flex flex-col md:flex-row items-stretch md:items-center gap-3">
+            <div class="flex-1">
+              <input placeholder="Buscar cooperado, CPF/CNPJ..." class="w-full border-gray-300 rounded-lg" />
+            </div>
+            <button class="bg-[#007F3D] hover:bg-[#005C2D] text-white rounded-lg px-3 py-2">Exportar CSV</button>
+          </div>
+        </section>
+
+        <!-- Tabela de cooperados -->
+        <section class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="max-h-[480px] overflow-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50 sticky top-0 z-10">
+                <tr>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Prioridade</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Nome</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">CPF/CNPJ</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Score de Risco</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Potencial CLTV</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Seguros a vencer (dias)</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Uso do limite (%)</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Qualidade de dados (%)</th>
+                  <th class="px-4 py-3 text-left text-xs font-semibold text-gray-600">Última interação</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <!-- Linhas exemplo -->
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3"><span class="text-xs bg-red-600 text-white px-2 py-0.5 rounded-lg">Alta</span></td>
+                  <td class="px-4 py-3">Maria Silva</td>
+                  <td class="px-4 py-3">•••123-45</td>
+                  <td class="px-4 py-3">712</td>
+                  <td class="px-4 py-3">R$ 85k</td>
+                  <td class="px-4 py-3">18</td>
+                  <td class="px-4 py-3">68%</td>
+                  <td class="px-4 py-3">92%</td>
+                  <td class="px-4 py-3">03/10/2025</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3"><span class="text-xs bg-yellow-500 text-white px-2 py-0.5 rounded-lg">Média</span></td>
+                  <td class="px-4 py-3">João Souza</td>
+                  <td class="px-4 py-3">•••987-65</td>
+                  <td class="px-4 py-3">640</td>
+                  <td class="px-4 py-3">R$ 45k</td>
+                  <td class="px-4 py-3">42</td>
+                  <td class="px-4 py-3">40%</td>
+                  <td class="px-4 py-3">80%</td>
+                  <td class="px-4 py-3">28/09/2025</td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                  <td class="px-4 py-3"><span class="text-xs bg-green-600 text-white px-2 py-0.5 rounded-lg">Baixa</span></td>
+                  <td class="px-4 py-3">Coop Agro LTDA</td>
+                  <td class="px-4 py-3">•••321-00</td>
+                  <td class="px-4 py-3">810</td>
+                  <td class="px-4 py-3">R$ 230k</td>
+                  <td class="px-4 py-3">90</td>
+                  <td class="px-4 py-3">22%</td>
+                  <td class="px-4 py-3">96%</td>
+                  <td class="px-4 py-3">10/10/2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Gráficos simples -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="bg-white rounded-xl shadow-md p-4">
+            <div class="mb-3 font-semibold text-[#004B3C]">Risco x Potencial</div>
+            <div class="bg-gray-200 h-40 rounded-xl flex items-center justify-center text-gray-500">Gráfico de exemplo</div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-4">
+            <div class="mb-3 font-semibold text-[#004B3C]">Status de Seguros</div>
+            <div class="bg-gray-200 h-40 rounded-xl flex items-center justify-center text-gray-500">Gráfico de exemplo</div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
